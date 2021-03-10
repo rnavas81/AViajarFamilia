@@ -1,13 +1,13 @@
 
-verMisItinerarios = () => {window.location="misitinerarios.html"}
+verMisItinerarios = () => { window.location = "misitinerarios.html" }
 
-function borrarPunto(){
+function borrarPunto() {
     var padre = $(this).parent().parent().parent();
     $(padre).remove();
 }
 
 window.onload = () => {
-    $("#agregar-punto").click(function(){
+    $("#agregar-punto").click(function () {
         var nuevo = $.parseHTML(`<div class="row">
             <hr>
             <div class="three columns p-10">
@@ -36,5 +36,5 @@ window.onload = () => {
         $("#puntos").append(nuevo);
     })
     $(".borrar-punto").click(borrarPunto);
-       
+
 }

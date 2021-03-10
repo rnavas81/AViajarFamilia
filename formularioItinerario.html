@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puntos del itinerario</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/fontawesome/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body class="fondo u-full-width">
     <!-- Cabecera -->
     <header class="sticky-top u-full-width">
         <div class="row p-10">
             <!-- icono a la izquierda -->
-            <div class=" four columns u-pull-left d-flex">
+            <div class="four columns u-pull-left d-flex">
                 <button id="accion" class="primary-button primary-text vertical-align" onclick="verMisItinerarios()">
                     <i class="fas fa-save"></i>
                 </button>
-                <img class="logo vertical-align" src="recursos/LogoLetras.png" alt="A viajar familia" srcset="">
+                <img class="logo vertical-align" src="recursos/LogoLetras.png" alt="A viajar familia" srcset="" />
             </div>
             <!-- menu de navegación -->
             <div class="menu eight columns u-pull-right">
-                <input type="checkbox" checked>
+                <input type="checkbox" checked />
                 <i class="fas fa-times"></i>
                 <i class="fas fa-bars"></i>
                 <nav class="">
                     <ul class="m-0">
                         <li class="">
-                          <a href="principal.html"> Te recomendamos </a>
+                            <a href="principal.html"> Te recomendamos </a>
                         </li>
                         <li class="">
-                          <a href="misitinerarios.html"> Mis itinerarios </a>
+                            <a href="misitinerarios.html"> Mis itinerarios </a>
                         </li>
                         <li class="">
-                          <a href="index.html"> Mi cuenta </a>
+                            <a href="index.html"> Mi cuenta </a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </div>            
-        <hr>
+        </div>
+        <hr />
         <!-- breadcrumbs -->
     </header>
     <main class="pt-5">
         <div class="container">
             <!--  Nombre del itinerario-->
             <div class="row">
-                <input class="twelve columns u-full-width primary-dark-text" type="text" 
-                    name="titulo" id="titulo" required maxlength="128" placeholder="Titulo del itinerario">
+                <input class="twelve columns u-full-width primary-dark-text" type="text" name="titulo" id="titulo"
+                    required maxlength="128" placeholder="Titulo del itinerario" />
             </div>
-            <hr>
+            <hr />
             <div class="text-center">
                 <h5 class="">Puntos del itinerario</h5>
             </div>
-            <hr>
+            <hr />
             <!-- puntos del itinerario -->
             <div id="puntos">
                 <div class="row">
                     <div class="three columns p-10">
                         <!-- Imagen del itinerario a la izquierda -->
-                        <img class="nueva imagen" src="recursos/camera.png" alt="Agregar imagen">
+                        <img class="nueva imagen" src="recursos/camera.png" alt="Agregar imagen" />
                     </div>
                     <!-- Izquierda Boton de agregar imagen | Derecha Botón de eliminar-->
                     <div class="nine columns">
@@ -73,11 +76,13 @@
                             </button>
                         </div>
                         <!-- Titulo del punto -->
-                        <input class="u-full-width mt-10 primary-dark-text" type="text" name="nombre" id="nombre" placeholder="Titulo de este punto">
+                        <input class="u-full-width mt-10 primary-dark-text" type="text" name="nombre" id="nombre"
+                            placeholder="Titulo de este punto" />
                     </div>
                     <div class="twelve columns">
                         <!-- Descripción del punto -->
-                        <textarea class="u-full-width primary-dark-text" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>    
+                        <textarea class="u-full-width primary-dark-text" name="descripcion" id="descripcion" cols="30"
+                            rows="10"></textarea>
                     </div>
                 </div>
             </div>
@@ -91,4 +96,5 @@
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/formularioItinerario.js"></script>
 </body>
+
 </html>

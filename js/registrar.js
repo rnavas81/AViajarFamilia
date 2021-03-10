@@ -1,2 +1,2 @@
 
-avanzar = () => window.location="index.html";
+avanzar = () => window.location = "index.html";

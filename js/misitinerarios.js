@@ -1,6 +1,6 @@
 
-irFormularioItinerario = () => {window.location="formularioItinerario.html"}
+irFormularioItinerario = () => { window.location = "formularioItinerario.html" }
 
 window.onload = () => {
-       
+
 }

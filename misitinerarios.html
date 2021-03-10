@@ -1,136 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Principal</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/fontawesome/fontawesome.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="fondo">
-    <!-- Cabecera -->
-    <header class="sticky-top u-full-width">
-      <div class="row p-10">
-        <!-- icono a la izquierda -->
-        <div class="four columns u-pull-left d-flex">
-          <button
-            id="accion"
-            class="primary-button primary-text vertical-align"
-            onclick="irFormularioItinerario()"
-          >
-            <i class="fas fa-file-medical"></i>
-          </button>
-          <img
-            class="logo vertical-align"
-            src="recursos/LogoLetras.png"
-            alt="A viajar familia"
-            srcset=""
-          />
-        </div>
-        <!-- menu de navegación -->
-        <div class="menu eight columns u-pull-right">
-          <input type="checkbox" checked />
-          <i class="fas fa-times"></i>
-          <i class="fas fa-bars"></i>
-          <nav class="">
-            <ul class="m-0">
-              <li class="">
-                <a href="principal.html"> Te recomendamos </a>
-              </li>
-              <li class="">
-                <a href="misitinerarios.html"> Mis itinerarios </a>
-              </li>
-              <li class="">
-                <a href="index.html"> Mi cuenta </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <hr />
-      <!-- breadcrumbs -->
-      <div class="row breadcrumbs p-l-5">
-        <a class="pl-5 primary-dark-text" href="misitinerarios.html"
-          >Mis itinerarios</a
-        >
-      </div>
-      <hr />
-    </header>
-    <main>
-      <!-- contenedor principal -->
-      <div class="container">
-        <div class="row u-pull-left u-full-width flex-wrap">
-          <!-- itinerario -->
-          <div class="itinerario four columns">
-            <!-- imagen -->
-            <div class="d-flex flex-center">
-              <img
-                class="imagen mx-5 mb-5"
-                src="recursos/ciudadreal_museo.jpg"
-                alt="Visitando Ciudad Real"
-              />
-              <!-- puntuación -->
-              <div class="puntuacion vertical">
-                <i class="fas fa-pencil-alt cursor-pointer" onclick="irFormularioItinerario()"></i>
-              </div>
-            </div>
-            <!-- Titulo -->
-            <div class="text-center ">
-              <h6 class="primary-text m-0">Visitando Ciudad Real</h6>
-            </div>
-          </div>
 
-          <!-- itinerario -->
-          <div class="itinerario four columns">
-            <!-- imagen -->
-            <div class="d-flex flex-center">
-              <img
-                class="imagen mx-5 mb-5"
-                src="recursos/valecia_artesciencias.jpg"
-                alt="Ruta en Valencia"
-              />
-              <!-- puntuación -->
-              <div class="puntuacion vertical">
-                <i class="fas fa-pencil-alt cursor-pointer" onclick="irFormularioItinerario()"></i>
-              </div>
-            </div>
-            <!-- Titulo -->
-            <div class="text-center cursor-pointer">
-              <h6 class="primary-text m-0">Ruta en Valencia</h6>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Principal</title>
+  <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/fontawesome/fontawesome.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <!-- itinerario -->
-          <div class="itinerario four columns">
-            <!-- imagen -->
-            <div class="d-flex flex-center">
-              <img
-                class="imagen mx-5 mb-5"
-                src="recursos/sansebastian_playa.jpg"
-                alt="Guipuzcoa, sus encantos"
-              />
-              <!-- puntuación -->
-              <div class="puntuacion vertical">
-                <i class="fas fa-pencil-alt cursor-pointer" onclick="irFormularioItinerario()"></i>
-              </div>
+<body class="fondo">
+  <!-- Cabecera -->
+  <header class="sticky-top u-full-width">
+    <div class="row p-10">
+      <!-- icono a la izquierda -->
+      <div class="four columns u-pull-left d-flex">
+        <button id="accion" class="primary-button primary-text vertical-align" onclick="irFormularioItinerario()">
+          <i class="fas fa-file-medical"></i>
+        </button>
+        <img class="logo vertical-align" src="recursos/LogoLetras.png" alt="A viajar familia" srcset="" />
+      </div>
+      <!-- menu de navegación -->
+      <div class="menu eight columns u-pull-right">
+        <input type="checkbox" checked />
+        <i class="fas fa-times"></i>
+        <i class="fas fa-bars"></i>
+        <nav class="">
+          <ul class="m-0">
+            <li class="">
+              <a href="principal.html"> Te recomendamos </a>
+            </li>
+            <li class="">
+              <a href="misitinerarios.html"> Mis itinerarios </a>
+            </li>
+            <li class="">
+              <a href="index.html"> Mi cuenta </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <hr />
+    <!-- breadcrumbs -->
+    <div class="row breadcrumbs p-l-5">
+      <a class="pl-5 primary-dark-text" href="misitinerarios.html">Mis itinerarios</a>
+    </div>
+    <hr />
+  </header>
+  <main>
+    <!-- contenedor principal -->
+    <div class="container">
+      <div class="row u-pull-left u-full-width flex-wrap">
+        <!-- itinerario -->
+        <div class="itinerario four columns">
+          <!-- imagen -->
+          <div class="d-flex flex-center">
+            <img class="imagen mx-5 mb-5" src="recursos/ciudadreal_museo.jpg" alt="Visitando Ciudad Real" />
+            <!-- puntuación -->
+            <div class="puntuacion vertical">
+              <i class="fas fa-pencil-alt cursor-pointer" onclick="irFormularioItinerario()"></i>
             </div>
-            <!-- Titulo -->
-            <div class="text-center cursor-pointer">
-              <h6 class="primary-text m-0">Guipuzcoa, sus encantos</h6>
+          </div>
+          <!-- Titulo -->
+          <div class="text-center ">
+            <h6 class="primary-text m-0">Visitando Ciudad Real</h6>
+          </div>
+        </div>
+
+        <!-- itinerario -->
+        <div class="itinerario four columns">
+          <!-- imagen -->
+          <div class="d-flex flex-center">
+            <img class="imagen mx-5 mb-5" src="recursos/valecia_artesciencias.jpg" alt="Ruta en Valencia" />
+            <!-- puntuación -->
+            <div class="puntuacion vertical">
+              <i class="fas fa-pencil-alt cursor-pointer" onclick="irFormularioItinerario()"></i>
             </div>
+          </div>
+          <!-- Titulo -->
+          <div class="text-center cursor-pointer">
+            <h6 class="primary-text m-0">Ruta en Valencia</h6>
+          </div>
+        </div>
+
+        <!-- itinerario -->
+        <div class="itinerario four columns">
+          <!-- imagen -->
+          <div class="d-flex flex-center">
+            <img class="imagen mx-5 mb-5" src="recursos/sansebastian_playa.jpg" alt="Guipuzcoa, sus encantos" />
+            <!-- puntuación -->
+            <div class="puntuacion vertical">
+              <i class="fas fa-pencil-alt cursor-pointer" onclick="irFormularioItinerario()"></i>
+            </div>
+          </div>
+          <!-- Titulo -->
+          <div class="text-center cursor-pointer">
+            <h6 class="primary-text m-0">Guipuzcoa, sus encantos</h6>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="container">
-      <div class="u-full-width">
-        <div class="text-center">
-        </div>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="u-full-width">
+      <div class="text-center">
       </div>
-    </footer>
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/misitinerarios.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/misitinerarios.js"></script>
+</body>
+
 </html>
