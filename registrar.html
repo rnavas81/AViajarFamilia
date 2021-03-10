@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puntos del itinerario</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/fontawesome/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="fondo u-full-width">
+    <!-- Cabecera -->
+    <header class="sticky-top u-full-width">
+      <div class="row p-10">
+        <!-- icono a la izquierda -->
+        <div class="four columns u-pull-left d-flex">
+          <button
+            id="accion"
+            class="primary-button primary-text vertical-align"
+            onclick="verMisItinerarios()"
+          >
+            <i class="fas fa-save"></i>
+          </button>
+          <img
+            class="logo vertical-align"
+            src="recursos/LogoLetras.png"
+            alt="A viajar familia"
+            srcset=""
+          />
+        </div>
+        <!-- menu de navegación -->
+        <div class="menu eight columns u-pull-right">
+          <input type="checkbox" checked />
+          <i class="fas fa-times"></i>
+          <i class="fas fa-bars"></i>
+          <nav class="">
+            <ul class="m-0">
+              <li class="">
+                <a href="principal.html"> Te recomendamos </a>
+              </li>
+              <li class="">
+                <a href="misitinerarios.html"> Mis itinerarios </a>
+              </li>
+              <li class="">
+                <a href="index.html"> Mi cuenta </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr />
+      <!-- breadcrumbs -->
+    </header>
+    <main class="container mt-10">
+      <div class="row">
+          <div class="eight columns offset-by-two p-5">
+              <div class="text-center mt-10">
+                <h5 class="">Formulario de registro</h5>
+              </div>
+              <hr />
+              <!--  Nombre del usuario-->
+              <div class="row mt-10">
+                <input
+                  class="twelve columns u-full-width primary-dark-text"
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  required
+                  maxlength="128"
+                  placeholder="Nombre del usuario"
+                />
+              </div>
+              <div class="row mt-10">
+                <input
+                  class="twelve columns u-full-width primary-dark-text"
+                  type="text"
+                  name="email"
+                  id="email"
+                  required
+                  maxlength="128"
+                  placeholder="Dirección de correo"
+                />
+              </div>
+              <div class="row mt-10">
+                <div class="six columns p-5">
+                  <button class="primary-button u-full-width" onclick="avanzar()">Registrar</button>
+                </div>
+                <div class="six columns p-5">
+                  <button class="secondary-button u-full-width" onclick="avanzar()">Volver</button>
+                </div>
+              </div>
+          </div>
+      </div>
+    </main>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/registrar.js"></script> 
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon" />
+    <title>A Viajar Familia</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/fontawesome/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="fondo">
+    <div class="container centrado">
+      <div class="row">
+        <!-- <div class="three columns"></div> -->
+        <div class="mt-5 six columns offset-by-three">
+          <div class="center">
+            <img class="logo" src="recursos/Logo.png" alt="" srcset="" />
+          </div>
+          <div>
+            <span id="mensaje" class="mensaje"></span>
+          </div>
+          <div>
+            <form id="formulario" method="post" novalidate>
+              <input
+                class="u-full-width"
+                type="text"
+                placeholder="Usuario"
+                id="user"
+                maxlength="16"
+              />
+              <input
+                class="u-full-width"
+                type="password"
+                placeholder="Contraseña"
+                id="password"
+                minlength="4"
+                maxlength="16"
+              />
+              <button
+                class="primary-button center my-3"
+                type="submit"
+                name="acceder"
+              >
+                <i class="fas fa-check"></i>
+              </button>
+              <button
+                class="primary-button center my-3"
+                type="submit"
+                name="registrarse"
+              >
+                Registrarse
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="three columns"></div> -->
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

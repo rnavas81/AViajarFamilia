@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerario</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fondo u-full-width">
+    <!-- Cabecera -->
+    <header class="sticky-top u-full-width">
+        <div class="row p-10">
+            <!-- icono a la izquierda -->
+            <div class=" four columns u-pull-left d-flex">
+                <button id="accion" class="primary-button primary-text vertical-align" onclick="verMisItinerarios()">
+                    <i class="fas fa-save"></i>
+                </button>
+                <img class="logo vertical-align" src="recursos/LogoLetras.png" alt="A viajar familia" srcset="">
+            </div>
+            <!-- menu de navegación -->
+            <div class="menu eight columns u-pull-right">
+                <input type="checkbox" checked>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+                <nav class="">
+                    <ul class="m-0">
+                        <li class="">
+                          <a href="principal.html"> Te recomendamos </a>
+                        </li>
+                        <li class="">
+                          <a href="misitinerarios.html"> Mis itinerarios </a>
+                        </li>
+                        <li class="">
+                          <a href="index.html"> Mi cuenta </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>            
+        <hr>
+        <!-- breadcrumbs -->
+        <div class="row breadcrumbs p-l-5">
+            <a class="pl-5 primary-dark-text" href="principal.html">Volver a la busqueda</a>
+        </div>
+        <hr>
+    </header>
+    <main class="">
+        <!-- Contenedor principal -->
+        <div>
+            <!-- Titulo -->
+            <h3 class="text-center m-0">Visitando Ciudad Real</h3>
+            <div class="container">
+                <hr class="hidden-xl hidden-l hidden-xs">
+                <!-- Lista de pasos del itinerario -->
+                <!-- Tamaño grande dos columnas con descripcion 
+                    |Tamaño medio  una columna con descripcion
+                    |Tamaño pequeño una columna solo titulo -->
+                <div class="row mt-5 pt-5">
+                    <!-- Imagen , titulo y descripcion -->
+                    <div class="punto six columns p-5">
+                        <img class="imagen u-pull-left mr-5 cursor-pointer" src="recursos/ciudadreal_museo.jpg" alt="El museo municipal" onclick="verPunto()">
+                        <h5 class="m-0">El museo municipal</h5>
+                        <p class="m-0 hidden-xs">Lorem fistrum al ataquerl benemeritaar me cago en tus muelas apetecan la caidita la caidita. No puedor papaar papaar te voy a borrar el cerito de la pradera ese pedazo de torpedo pecador mamaar. Condemor jarl mamaar tiene musho peligro amatomaa. De la pradera de la pradera jarl a gramenawer te voy a borrar el cerito diodenoo ahorarr a peich tiene musho peligro.</p>
+                    </div>
+                    <hr class="twelve columns hidden-xl hidden-l hidden-m">
+
+                    <!-- Imagen , titulo y descripcion -->
+                    <div class="punto six columns p-5">
+                        <img class="imagen u-pull-left mr-5 cursor-pointer" src="recursos/ciudadreal_bodegas.jpg" alt="Bodegas" onclick="verPunto()">
+                        <h5 class="m-0">Bodegas</h5>
+                        <p class="m-0 hidden-xs">Lorem fistrum al ataquerl benemeritaar me cago en tus muelas apetecan la caidita la caidita. No puedor papaar papaar te voy a borrar el cerito de la pradera ese pedazo de torpedo pecador mamaar. Condemor jarl mamaar tiene musho peligro amatomaa. De la pradera de la pradera jarl a gramenawer te voy a borrar el cerito diodenoo ahorarr a peich tiene musho peligro.</p>
+                    </div>
+                    <hr class="twelve columns hidden-xl hidden-l hidden-m">
+
+                    <!-- Imagen , titulo y descripcion -->
+                    <div class="punto six columns p-5">
+                        <img class="imagen u-pull-left mr-5 cursor-pointer" src="recursos/ciudadreal_comedias.jpg" alt="El corral de comedias" onclick="verPunto()">
+                        <h5 class="m-0">El corral de comedias</h5>
+                        <p class="m-0 hidden-xs">Lorem fistrum al ataquerl benemeritaar me cago en tus muelas apetecan la caidita la caidita. No puedor papaar papaar te voy a borrar el cerito de la pradera ese pedazo de torpedo pecador mamaar. Condemor jarl mamaar tiene musho peligro amatomaa. De la pradera de la pradera jarl a gramenawer te voy a borrar el cerito diodenoo ahorarr a peich tiene musho peligro.</p>
+                    </div>
+                    <hr class="twelve columns hidden-xl hidden-l hidden-m">
+
+                    <!-- Imagen , titulo y descripcion -->
+                    <div class="punto six columns p-5">
+                        <img class="imagen u-pull-left mr-5 cursor-pointer" src="recursos/ciudadreal_mineria.jpg" alt="El museo de la mineria" onclick="verPunto()">
+                        <h5 class="m-0">El museo de la mineria</h5>
+                        <p class="m-0 hidden-xs">Lorem fistrum al ataquerl benemeritaar me cago en tus muelas apetecan la caidita la caidita. No puedor papaar papaar te voy a borrar el cerito de la pradera ese pedazo de torpedo pecador mamaar. Condemor jarl mamaar tiene musho peligro amatomaa. De la pradera de la pradera jarl a gramenawer te voy a borrar el cerito diodenoo ahorarr a peich tiene musho peligro.</p>
+                    </div>
+                    <hr class="twelve columns hidden-xl hidden-l hidden-m">
+
+                    <!-- Imagen , titulo y descripcion -->
+                    <div class="punto six columns p-5">
+                        <img class="imagen u-pull-left mr-5 cursor-pointer" src="recursos/ciudadreal_playa.jpg" alt="Playa del Vicario" onclick="verPunto()">
+                        <h5 class="m-0">Playa del Vicario</h5>
+                        <p class="m-0 hidden-xs">Lorem fistrum al ataquerl benemeritaar me cago en tus muelas apetecan la caidita la caidita. No puedor papaar papaar te voy a borrar el cerito de la pradera ese pedazo de torpedo pecador mamaar. Condemor jarl mamaar tiene musho peligro amatomaa. De la pradera de la pradera jarl a gramenawer te voy a borrar el cerito diodenoo ahorarr a peich tiene musho peligro.</p>
+                    </div>
+                    <hr class="twelve columns hidden-xl hidden-l hidden-m">
+
+                    <!-- Imagen , titulo y descripcion -->
+                    <div class="punto six columns p-5">
+                        <img class="imagen u-pull-left mr-5 cursor-pointer" src="recursos/ciudadreal_quijote.jpeg" alt="El museo del Quijote" onclick="verPunto()">
+                        <h5 class="m-0">El museo del Quijote</h5>
+                        <p class="m-0 hidden-xs">Lorem fistrum al ataquerl benemeritaar me cago en tus muelas apetecan la caidita la caidita. No puedor papaar papaar te voy a borrar el cerito de la pradera ese pedazo de torpedo pecador mamaar. Condemor jarl mamaar tiene musho peligro amatomaa. De la pradera de la pradera jarl a gramenawer te voy a borrar el cerito diodenoo ahorarr a peich tiene musho peligro.</p>
+                    </div>
+                    <hr class="twelve columns hidden-xl hidden-l hidden-m">
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+    <footer class="primary-background sticky-bottom u-full-width d-flex flex-center vertical-align">
+            <div class="puntuacion horizontal">
+                <i data-pos="1" class="m-0 fas fa-star primary-light-text"></i>
+                <i data-pos="2" class="m-0 fas fa-star primary-light-text"></i>
+                <i data-pos="3" class="m-0 fas fa-star primary-dark-text"></i>
+                <i data-pos="4" class="m-0 fas fa-star primary-dark-text"></i>
+                <i data-pos="5" class="m-0 fas fa-star primary-dark-text"></i>
+            </div>
+    </footer>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/itinerario.js"></script> 
+</body>
+</html>

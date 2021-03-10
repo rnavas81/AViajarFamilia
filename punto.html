@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El museo municipal</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fondo u-full-width">
+    <!-- Cabecera -->
+    <header class="sticky-top u-full-width">
+        <div class="row p-10">
+            <!-- icono a la izquierda -->
+            <div class=" four columns u-pull-left d-flex">
+                <button id="accion" class="primary-button primary-text vertical-align">
+                    <i class="fas fa-map-marker-alt"></i>
+                </button>
+                <img class="logo vertical-align" src="recursos/LogoLetras.png" alt="A viajar familia" srcset="">
+            </div>
+            <!-- menu de navegación -->
+            <div class="menu eight columns u-pull-right">
+                <input type="checkbox" checked>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+                <nav class="">
+                    <ul class="m-0">
+                        <li class="">
+                          <a href="principal.html"> Te recomendamos </a>
+                        </li>
+                        <li class="">
+                          <a href="misitinerarios.html"> Mis itinerarios </a>
+                        </li>
+                        <li class="">
+                          <a href="index.html"> Mi cuenta </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>            
+        <hr>
+        <!-- breadcrumbs -->
+        <div class="row breadcrumbs p-l-5">
+            <a class="pl-5 primary-dark-text" href="itinerario.html">El museo municipal</a>
+        </div>
+        <hr>
+    </header>
+    <main class="container pt-5">
+        <div class="row mt-5">
+            <!-- Dos columnas -->
+            <div class="descripcion eight columns p-10">
+                <!-- Imagen, titulo y descripcion -->
+                <img class="imagen u-pull-left mr-5" src="recursos/ciudadreal_museo.jpg" alt="El museo municipal">
+                <h3>El museo municipal</h3>
+                <p>Lorem fistrum al ataquerl benemeritaar me cago en tus muelas apetecan la caidita la caidita. No puedor papaar papaar te voy a borrar el cerito de la pradera ese pedazo de torpedo pecador mamaar. Condemor jarl mamaar tiene musho peligro amatomaa. De la pradera de la pradera jarl a gramenawer te voy a borrar el cerito diodenoo ahorarr a peich tiene musho peligro.</p>
+            </div>
+            <div class="descripcion four columns p-10">
+                <!-- Comentarios anteriores y agregar comentarios -->
+                <div id="blkcomentarios">
+                    <div>
+                        <h5>Paco de Lucía</h5>
+                        <p>Lorem fistrum por la gloria de mi madre nostrud duis ahorarr aliquip amatomaa diodenoo laboris no puedor. Occaecat officia la caidita commodo consequat no te digo trigo por no llamarte Rodrigor está la cosa muy malar ut sed.</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h5>Juan Palomo</h5>
+                        <p>Lorem fistrum por la gloria de mi madre nostrud duis ahorarr aliquip amatomaa diodenoo laboris no puedor. Occaecat officia la caidita commodo consequat no te digo trigo por no llamarte Rodrigor está la cosa muy malar ut sed.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-center">
+                    <textarea class="primary-dark-text" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    <button class="primary-button primary-text" onclick="agregarComentario()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/punto.js"></script>
+</body>
+</html>

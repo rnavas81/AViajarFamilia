@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/fontawesome/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="fondo">
+    <!-- Cabecera -->
+    <header class="sticky-top u-full-width">
+      <div class="row p-10">
+        <!-- icono a la izquierda -->
+        <div class="four columns u-pull-left d-flex">
+          <input type="checkbox" name="chk_buscar" id="chk_buscar" />
+          <button
+            id="accion"
+            class="primary-button primary-text vertical-align"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+          <img
+            class="logo vertical-align"
+            src="recursos/LogoLetras.png"
+            alt="A viajar familia"
+            srcset=""
+          />
+          <input
+            class="m-0 vertical-align"
+            type="search"
+            name="buscar"
+            id="buscar"
+          />
+        </div>
+        <!-- menu de navegación -->
+        <div class="menu eight columns u-pull-right">
+          <input type="checkbox" checked />
+          <i class="fas fa-times"></i>
+          <i class="fas fa-bars"></i>
+          <nav class="">
+            <ul class="m-0">
+              <li class="">
+                <a href="principal.html"> Te recomendamos </a>
+              </li>
+              <li class="">
+                <a href="misitinerarios.html"> Mis itinerarios </a>
+              </li>
+              <li class="">
+                <a href="index.html"> Mi cuenta </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr />
+      <!-- breadcrumbs -->
+      <div class="row breadcrumbs p-l-5">
+        <a class="pl-5 primary-dark-text" href="principal.html"
+          >Te recomendamos</a
+        >
+      </div>
+      <hr />
+    </header>
+    <main>
+      <!-- contenedor principal -->
+      <div class="container">
+        <div class="row u-pull-left u-full-width flex-wrap">
+          <!-- itinerario -->
+          <div class="itinerario four columns">
+            <!-- imagen -->
+            <div class="d-flex flex-center">
+              <img
+                class="imagen mx-5 mb-5 cursor-pointer"
+                src="recursos/ciudadreal_museo.jpg"
+                alt="Visitando Ciudad Real"
+                onclick="verItinerario()"
+              />
+              <!-- puntuación -->
+              <div class="puntuacion vertical">
+                <i data-pos="1" class="fas fa-star"></i>
+                <i data-pos="2" class="fas fa-star"></i>
+                <i data-pos="3" class="fas fa-star"></i>
+                <i data-pos="4" class="fas fa-star secondary-text"></i>
+                <i data-pos="5" class="fas fa-star secondary-text"></i>
+              </div>
+            </div>
+            <!-- Titulo -->
+            <div class="text-center cursor-pointer" onclick="verItinerario()">
+              <h6 class="primary-text m-0">Visitando Ciudad Real</h6>
+              <p class="primary-dark-text m-0">Jose Mota</p>
+            </div>
+          </div>
+
+          <!-- itinerario -->
+          <div class="itinerario four columns">
+            <!-- imagen -->
+            <div class="d-flex flex-center">
+              <img
+                class="imagen mx-5 mb-5 cursor-pointer"
+                src="recursos/valecia_artesciencias.jpg"
+                alt="Ruta en Valencia"
+                onclick="verItinerario()"
+              />
+              <!-- puntuación -->
+              <div class="puntuacion vertical">
+                <i data-pos="1" class="fas fa-star"></i>
+                <i data-pos="2" class="fas fa-star"></i>
+                <i data-pos="3" class="fas fa-star"></i>
+                <i data-pos="4" class="fas fa-star secondary-text"></i>
+                <i data-pos="5" class="fas fa-star secondary-text"></i>
+              </div>
+            </div>
+            <!-- Titulo -->
+            <div class="text-center cursor-pointer" onclick="verItinerario()">
+              <h6 class="primary-text m-0">Ruta en Valencia</h6>
+              <p class="primary-dark-text m-0">Paco Roig</p>
+            </div>
+          </div>
+
+          <!-- itinerario -->
+          <div class="itinerario four columns">
+            <!-- imagen -->
+            <div class="d-flex flex-center">
+              <img
+                class="imagen mx-5 mb-5 cursor-pointer"
+                src="recursos/sansebastian_playa.jpg"
+                alt="Guipuzcoa, sus encantos"
+                onclick="verItinerario()"
+              />
+              <!-- puntuación -->
+              <div class="puntuacion vertical">
+                <i data-pos="1" class="fas fa-star"></i>
+                <i data-pos="2" class="fas fa-star"></i>
+                <i data-pos="3" class="fas fa-star"></i>
+                <i data-pos="4" class="fas fa-star secondary-text"></i>
+                <i data-pos="5" class="fas fa-star secondary-text"></i>
+              </div>
+            </div>
+            <!-- Titulo -->
+            <div class="text-center cursor-pointer" onclick="verItinerario()">
+              <h6 class="primary-text m-0">Guipuzcoa, sus encantos</h6>
+              <p class="primary-dark-text m-0">Andony Goicoetxea</p>
+            </div>
+          </div>
+
+          <!-- itinerario -->
+          <div class="itinerario four columns">
+            <!-- imagen -->
+            <div class="d-flex flex-center">
+              <img
+                class="imagen mx-5 mb-5 cursor-pointer"
+                src="recursos/sevilla_plaza.jpg"
+                alt="Sevilla tiene un color especial"
+                onclick="verItinerario()"
+              />
+              <!-- puntuación -->
+              <div class="puntuacion vertical">
+                <i data-pos="1" class="fas fa-star"></i>
+                <i data-pos="2" class="fas fa-star"></i>
+                <i data-pos="3" class="fas fa-star"></i>
+                <i data-pos="4" class="fas fa-star secondary-text"></i>
+                <i data-pos="5" class="fas fa-star secondary-text"></i>
+              </div>
+            </div>
+            <!-- Titulo -->
+            <div class="text-center cursor-pointer" onclick="verItinerario()">
+              <h6 class="primary-text m-0">Sevilla tiene un color especial</h6>
+              <p class="primary-dark-text m-0">Los del Rio</p>
+            </div>
+          </div>
+
+          <!-- itinerario -->
+          <div class="itinerario four columns">
+            <!-- imagen -->
+            <div class="d-flex flex-center">
+              <img
+                class="imagen mx-5 mb-5 cursor-pointer"
+                src="recursos/barcelona_sagrada.jpg"
+                alt="Tour condal"
+                onclick="verItinerario()"
+              />
+              <!-- puntuación -->
+              <div class="puntuacion vertical">
+                <i data-pos="1" class="fas fa-star"></i>
+                <i data-pos="2" class="fas fa-star"></i>
+                <i data-pos="3" class="fas fa-star"></i>
+                <i data-pos="4" class="fas fa-star secondary-text"></i>
+                <i data-pos="5" class="fas fa-star secondary-text"></i>
+              </div>
+            </div>
+            <!-- Titulo -->
+            <div class="text-center cursor-pointer" onclick="verItinerario()">
+              <h6 class="primary-text m-0">Tour condal</h6>
+              <p class="primary-dark-text m-0">Coby</p>
+            </div>
+          </div>
+
+          <!-- itinerario -->
+          <div class="itinerario four columns">
+            <!-- imagen -->
+            <div class="d-flex flex-center">
+              <img
+                class="imagen mx-5 mb-5 cursor-pointer"
+                src="recursos/madrid_debod.jpg"
+                alt="Madrid castizo"
+                onclick="verItinerario()"
+              />
+              <!-- puntuación -->
+              <div class="puntuacion vertical">
+                <i data-pos="1" class="fas fa-star"></i>
+                <i data-pos="2" class="fas fa-star"></i>
+                <i data-pos="3" class="fas fa-star"></i>
+                <i data-pos="4" class="fas fa-star secondary-text"></i>
+                <i data-pos="5" class="fas fa-star secondary-text"></i>
+              </div>
+            </div>
+            <!-- Titulo -->
+            <div class="text-center cursor-pointer" onclick="verItinerario()">
+              <h6 class="primary-text m-0">Madrid castizo</h6>
+              <p class="primary-dark-text m-0">Iker Casillas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="u-full-width">
+        <div class="text-center">
+          <i
+            class="fas fa-chevron-left primary-text"
+            onclick="window.location='principal.html'"
+          ></i>
+          <a class="primary-text" href="principal.html">1</a>
+          <a class="primary-text" href="principal.html">2</a>
+          <a class="primary-text" href="principal.html">3</a>
+          <i
+            class="fas fa-chevron-right primary-text"
+            onclick="window.location='principal.html'"
+          ></i>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/principal.js"></script>
+  </body>
+</html>
